@@ -1,0 +1,33 @@
+<!-- Used source https://www.qwiklabs.com/focuses/4823?parent=catalog
+     Used source https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0-->
+     
+<!DOCTYPE html>
+<html>
+  <head> <!-- Defining meta data in the head section and add the style sheet to our project -->
+    <title>Thesis Project - Nearby Services</title>     <!-- Giving a title to my project to be shown on the navigation bar. -->
+    <meta name="viewport" content="initial-scale=1.0">  <!-- Setting the content to full size and initial scale to 1. -->
+    <meta charset="utf-8">                              <!-- Defining character set to be used. -->
+
+    <link rel="stylesheet" type="text/css" href="ThesisV1.css">                    <!-- Importing external CSS file. -->
+    <script src="ThesisV1.js"></script>
+   </head>
+  <body>
+    <!-- In the body section we add info Panel Div (Stage 4) -->
+    <div id="wrapper">
+    
+      <div id="searchpanel">
+       <h3 id="heading">Find Nearby Places</h3>
+      </div>
+  
+  <div id="wrapper2">
+    <div id="panel"></div>
+    <div id="map"></div>
+  </div>
+  </div>
+    
+    <!-- Updated script with places library. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsS9YsNIfuc09KS67-GsBS9VPY5HG66sM&libraries=places&callback=initMap">
+    </script>
+  
+  </body>
+</html> 
